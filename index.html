@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20241104182958" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container"></div>
+		</header>
+
+		<main class="page">
+			<section class="page__block block-files">
+				<div class="block-files__container">
+					<div class="block-files__body">
+						<h1 class="block-files__title">Форма по загрузке фото</h1>
+						<div class="block-files__description">Описание: вы можете загрузить ваши фотографии в формате JPG, JPEG, PNG</div>
+						<div class="block-files__area" id="drop-area">
+							<form class="block-files__form" id="uploadForm" method="post" enctype="multipart/form-data">
+								<label class="block-files__file" title="Вы можете загрузить до 5 файлов JPG, JPEG, PNG, размер одного — до 10 МБ">
+									<input class="block-files__input" id="block-files__input" multiple="multiple" autocomplete="off" type="file" name="file[]" multiple accept="image/*" data-error="Ошибка" placeholder="">
+									<span class="block-files__file-icon">
+										<img class="block-files__icon" src="img/choice.svg" alt="Выбрать файл" width="25">
+									</span>
+									<span class="block-files__file-btn">Выберите файл</span>
+								</label>
+								<div class="block-files__list"></div>
+								<div class="block-files__error-message"></div>
+								<button type="submit" class="block-files__button">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container"></div>
+		</footer>
+
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+	<script src="js/app.min.js?_v=20241104182958"></script>
+
+</body>
+
+</html>
